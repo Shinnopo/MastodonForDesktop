@@ -3,21 +3,23 @@
   "name": "mastodonForDesktop",
   "description": "My application description",
   "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "author": "Shinnosuke Mogi <shinnopo@gmail.com>",
   "main": "app/background.js",
   "scripts": {
-    "dev": "nextron",
+    "dev": "nextron -p 8080",
     "build": "nextron build",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "electron-serve": "^1.0.0",
-    "electron-store": "^6.0.0"
+    "electron-store": "^6.0.0",
+    "mastodon-api": "^1.3.0",
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@material-ui/core": "^4.11.0",
-    "@types/node": "^14.6.4",
+    "@types/node": "^14.11.2",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
